@@ -1,0 +1,286 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100&family=Merriweather:ital,wght@1,300&family=Nunito+Sans:wght@200&family=Titan+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+  
+}
+.logo{
+    width: 20%;
+    display: flex;
+    
+}
+.logo img{
+    width: 40%;
+    display:flex;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin: 1rem;
+}
+
+.nav-list{
+width: 70%;
+background-color: black;
+background: transparent;
+display: flex;
+justify-content: center;
+}
+.nav-list li{
+list-style: none;
+padding: 26px 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+   
+ }
+.nav-list li a:hover{
+    color:gainsboro;
+
+}
+.rightNav{
+width: 30%;
+text-align: right;
+padding: 0 23px;
+
+}
+#search{
+padding: 5px;
+font-size: 17px;
+border:  2px solid grey;
+border-radius: 9px;
+}
+.background{
+    background: rgba(0,0,0,0.7)url('../img/pizza.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstSection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 75%;
+    
+}
+.firstHalf{
+width: 75%;
+display:flex;
+flex-direction: column;
+justify-content: center;
+
+}
+.secondHalf{
+    width: 40%; 
+    border-radius: 300px;
+    display: block;
+    margin: auto;
+    padding: 40px;
+}
+.secondHalf img{
+    width: 60%;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 50px;
+  
+}
+.text-big{
+font-size: 34.5px;
+
+
+}
+.text-small{
+font-size: 17px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 8px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+   
+}
+.btn:hover{
+    color:gainsboro;
+    font-weight: bolder;
+    
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+   
+
+}
+.btn-dark{
+    color: grey;
+    background-color: white;
+    border: 1px solid grey;
+    font-size: 17px;
+    
+   
+}
+.section{
+    
+    display: flex;
+    align-content: center;
+    justify-content:space-evenly;
+    max-width: 80%;
+    margin:auto;
+    font-family: 'Anek Malayalam', sans-serif;
+    padding: 10px;
+}
+.sec-Left{
+flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 0px 65px;
+}
+.sectionTag{
+    padding: 16px 0;
+}
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.thumbnail img{
+    width: 200px;
+    margin-top: 20px;
+}
+.con{
+height:550px;
+}
+.text-center{
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+    font-size: 29px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.form{
+    max-width: 62%;
+    margin: 12px auto;
+}
+.form-input{
+margin: 20px 0;
+background-color: rgb(245, 245, 245);
+padding: 12px 10px;
+width: 100%;
+font-size: 14px;
+border-radius: 6px;
+}
+.subBtn{
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: gray;
+    background-color: rgb(245, 245, 245);
+}
+.subBtn:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    color:azure;
+}
+.burger{
+display: none;
+position: absolute;
+cursor: pointer;
+right: 5%;
+top:15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width:1141px){
+    
+    .navbar{
+        height: 447px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .nav-list{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .rightNav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .text-big{
+     text-align: center;
+    }
+    .text-small{
+       text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px;
+    }
+   
+    .secondHalf img{
+        margin-top: 1rem;
+        margin: 2rem;
+    }
+}
+
+   
+   
+
